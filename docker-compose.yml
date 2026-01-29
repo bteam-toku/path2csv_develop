@@ -1,0 +1,10 @@
+services:
+  path2csv:
+    build: .
+    image: ghcr.io/bteam-toku/path2csv:latest
+    container_name: path2csv_container
+    environment:
+      - IS_DOCKER=true
+    volumes:
+      - .:/data
+      - ./customizes:/app/src/path2csv/customizes

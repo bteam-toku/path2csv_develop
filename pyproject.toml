@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "path2csv"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = ["pandas>=3.0.0", "pyyaml>=6.0.3"]
+
+[project.scripts]
+execute = "path2csv.__main__:main"
+path2csv = "path2csv.__main__:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+packages = { find = { where = ["src"] } }

@@ -1,0 +1,8 @@
+# -- Adapter指定 ---
+adapter_type_name: ""  # デフォルトアダプターを指定
+
+# --- パス設定 ---
+# プロジェクトルートディレクトリからの相対パスで指定。Docker環境では /data 以下にマウントされます。
+path_settings:
+  search_path: ""
+  output_path: "output"
